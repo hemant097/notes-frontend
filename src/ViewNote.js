@@ -8,7 +8,7 @@ function ViewNote() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/share/${token}`)
+    fetch(`https://notes-app-backend-34154ef4c3d1.herokuapp.com/api/notes/share/${token}`)
       .then((res) => {
         if (!res.ok) throw new Error("Note not found");
         return res.json();
