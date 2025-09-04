@@ -6,7 +6,7 @@ function App() {
   const [notes, setNotes] = useState([]);
   const [note, setNote] = useState({ title: "", content: "" });
 
-  const API_URL = "http://localhost:8080/api/notes";
+  const API_URL = "https://notes-app-backend-34154ef4c3d1.herokuapp.com/api/notes";
 
   useEffect(() => {
     fetchNotes();
