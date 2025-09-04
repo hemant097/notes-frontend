@@ -8,7 +8,7 @@ function ViewNote() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL || "http://localhost:8080/api/notes"}/share/${token}`)
+    fetch(`${process.env.REACT_APP_API_URL}/share/${token}`)
       .then((res) => {
         if (!res.ok) throw new Error("Note not found");
         return res.json();
