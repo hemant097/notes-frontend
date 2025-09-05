@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ViewNote from "./ViewNote";
-import Home from "./Home"; // your original notes app
+import Home from "./Home"; 
 
 function App() {
   return (

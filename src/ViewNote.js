@@ -17,6 +17,7 @@ function ViewNote() {
       .catch((err) => setError(err.message));
   }, [token]);
 
+  //if get an error
   if (error) {
     return (
       <div className="container">
@@ -28,6 +29,7 @@ function ViewNote() {
     );
   }
 
+  //if note not present
   if (!note) {
     return (
       <div className="container">
